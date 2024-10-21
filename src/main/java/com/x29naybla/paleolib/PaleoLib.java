@@ -1,6 +1,7 @@
 package com.x29naybla.paleolib;
 
 import com.x29naybla.paleolib.block.ModBlocks;
+import com.x29naybla.paleolib.item.ModCreativeModeTabs;
 import com.x29naybla.paleolib.item.ModItems;
 import org.slf4j.Logger;
 
@@ -58,6 +59,7 @@ public class PaleoLib {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

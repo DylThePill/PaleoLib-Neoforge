@@ -1,3 +1,23 @@
 {
-  "item.paleolib.chisel": "Chisel"
+  "item.paleolib.chisel": "Chisel",
+
+  "block.paleolib.suspicious_stone": "Suspicious Stone",
+  "block.paleolib.suspicious_deepslate": "Suspicious Deepslate",
+
+  "block.paleolib.suspicious_granite": "Suspicious Granite",
+  "block.paleolib.suspicious_andesite": "Suspicious Andesite",
+  "block.paleolib.suspicious_diorite": "Suspicious Diorite",
+  "block.paleolib.suspicious_tuff": "Suspicious Tuff",
+  "block.paleolib.suspicious_dripstone_block": "Suspicious Dripstone Block",
+  "block.paleolib.suspicious_calcite": "Suspicious Calcite",
+
+  "block.paleolib.suspicious_sandstone": "Suspicious Sandstone",
+  "block.paleolib.suspicious_red_sandstone": "Suspicious Red Sandstone",
+
+  "block.paleolib.suspicious_blackstone": "Suspicious Blackstone",
+  "block.paleolib.suspicious_basalt": "Suspicious Basalt",
+
+  "block.paleolib.suspicious_end_stone": "Suspicious End Stone",
+
+  "creativetab.paleolib.paleolib": "PaleoLib"
 }

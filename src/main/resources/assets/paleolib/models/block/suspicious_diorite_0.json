@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "paleolib:block/suspicious_diorite_0"
+  }
+}

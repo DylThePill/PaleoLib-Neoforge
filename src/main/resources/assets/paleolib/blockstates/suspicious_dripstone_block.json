@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "dusted=0": {
+      "model": "paleolib:block/suspicious_dripstone_block_0"
+    },
+    "dusted=1": {
+      "model": "paleolib:block/suspicious_dripstone_block_1"
+    },
+    "dusted=2": {
+      "model": "paleolib:block/suspicious_dripstone_block_2"
+    },
+    "dusted=3": {
+      "model": "paleolib:block/suspicious_dripstone_block_3"
+    }
+  }
+}
