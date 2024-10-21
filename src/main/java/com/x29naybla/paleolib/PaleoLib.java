@@ -1,6 +1,7 @@
 package com.x29naybla.paleolib;
 
 import com.x29naybla.paleolib.block.ModBlocks;
+import com.x29naybla.paleolib.block.entity.ChiselableBlockRenderer;
 import com.x29naybla.paleolib.block.entity.ModBlockEntityTypes;
 import com.x29naybla.paleolib.item.ModCreativeModeTabs;
 import com.x29naybla.paleolib.item.ModItems;

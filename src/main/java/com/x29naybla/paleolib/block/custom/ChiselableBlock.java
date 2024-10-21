@@ -73,13 +73,6 @@ public class ChiselableBlock extends BaseEntityBlock {
 
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (random.nextInt(16) == 0) {
-            BlockPos blockpos = pos.below();
-            if (FallingBlock.isFree(level.getBlockState(blockpos))) {
-                double d0 = (double)pos.getX() + random.nextDouble();
-                double d1 = (double)pos.getY() - 0.05;
-                double d2 = (double)pos.getZ() + random.nextDouble();
-                level.addParticle(new BlockParticleOption(ParticleTypes.FALLING_DUST, state), d0, d1, d2, 0.0, 0.0, 0.0);
-            }
         }
 
     }
