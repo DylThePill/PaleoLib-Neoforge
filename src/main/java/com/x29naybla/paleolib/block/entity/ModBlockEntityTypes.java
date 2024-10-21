@@ -9,9 +9,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class ModBlockEntityTypes {
-    public static final DeferredRegister<BlockEntityType<?>> CHISELABLE_BLOCK = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, PaleoLib.MOD_ID);
+    public static final DeferredRegister<BlockEntityType<?>> SUSPICIOUS_ROCK = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, PaleoLib.MOD_ID);
 
-    public static final Supplier<BlockEntityType<ChiselableBlockEntity>> CHISELABLE = CHISELABLE_BLOCK.register("chiselable",
+    public static final Supplier<BlockEntityType<ChiselableBlockEntity>> CHISELABLE =  SUSPICIOUS_ROCK.register("chiselable",
             () -> BlockEntityType.Builder.of(ChiselableBlockEntity::new,
                             ModBlocks.SUSPICIOUS_ANDESITE.get(),
                             ModBlocks.SUSPICIOUS_BASALT.get(),

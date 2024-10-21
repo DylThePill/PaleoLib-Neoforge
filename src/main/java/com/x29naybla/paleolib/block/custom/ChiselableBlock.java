@@ -15,7 +15,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BrushableBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -27,7 +26,7 @@ import javax.annotation.Nullable;
 
 public class ChiselableBlock extends BaseEntityBlock {
     public static final MapCodec<ChiselableBlock> CODEC = RecordCodecBuilder.mapCodec((p_344647_) -> {
-        return p_344647_.group(BuiltInRegistries.BLOCK.byNameCodec().fieldOf("turns_into").forGetter(ChiselableBlock::getTurnsInto), BuiltInRegistries.SOUND_EVENT.byNameCodec().fieldOf("chisel_sound").forGetter(ChiselableBlock::getChiselSound), BuiltInRegistries.SOUND_EVENT.byNameCodec().fieldOf("chisel_comleted_sound").forGetter(ChiselableBlock::getChiselCompletedSound), propertiesCodec()).apply(p_344647_, ChiselableBlock::new);
+        return p_344647_.group(BuiltInRegistries.BLOCK.byNameCodec().fieldOf("turns_into").forGetter(ChiselableBlock::getTurnsInto), BuiltInRegistries.SOUND_EVENT.byNameCodec().fieldOf("chisel_sound").forGetter(ChiselableBlock::getChiselSound), BuiltInRegistries.SOUND_EVENT.byNameCodec().fieldOf("chisel_completed_sound").forGetter(ChiselableBlock::getChiselCompletedSound), propertiesCodec()).apply(p_344647_, ChiselableBlock::new);
     });
     private static final IntegerProperty DUSTED;
     public static final int TICK_DELAY = 2;

@@ -1,5 +1,7 @@
 package com.x29naybla.paleolib.item.custom;
 
+import com.x29naybla.paleolib.block.custom.ChiselableBlock;
+import com.x29naybla.paleolib.block.entity.ChiselableBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -20,10 +22,8 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.BrushableBlock;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BrushableBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -73,9 +73,9 @@ public class ChiselItem extends Item {
 
                         Block var15 = blockstate.getBlock();
                         SoundEvent soundevent;
-                        if (var15 instanceof BrushableBlock) {
-                            BrushableBlock brushableblock = (BrushableBlock)var15;
-                            soundevent = brushableblock.getBrushSound();
+                        if (var15 instanceof ChiselableBlock) {
+                            ChiselableBlock chiselableblock = (ChiselableBlock)var15;
+                            soundevent = chiselableblock.getChiselSound();
                         } else {
                             soundevent = SoundEvents.BRUSH_GENERIC;
                         }
@@ -83,9 +83,9 @@ public class ChiselItem extends Item {
                         level.playSound(player, blockpos, soundevent, SoundSource.BLOCKS);
                         if (!level.isClientSide()) {
                             BlockEntity var18 = level.getBlockEntity(blockpos);
-                            if (var18 instanceof BrushableBlockEntity) {
-                                BrushableBlockEntity brushableblockentity = (BrushableBlockEntity)var18;
-                                boolean flag1 = brushableblockentity.brush(level.getGameTime(), player, blockhitresult.getDirection());
+                            if (var18 instanceof ChiselableBlockEntity) {
+                                ChiselableBlockEntity chiselableblockentity = (ChiselableBlockEntity)var18;
+                                boolean flag1 = chiselableblockentity.chisel(level.getGameTime(), player, blockhitresult.getDirection());
                                 if (flag1) {
                                     EquipmentSlot equipmentslot = stack.equals(player.getItemBySlot(EquipmentSlot.OFFHAND)) ? EquipmentSlot.OFFHAND : EquipmentSlot.MAINHAND;
                                     stack.hurtAndBreak(1, livingEntity, equipmentslot);
