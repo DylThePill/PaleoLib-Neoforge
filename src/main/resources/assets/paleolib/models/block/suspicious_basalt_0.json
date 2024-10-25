@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "paleolib:block/suspicious_basalt_0"
+    "end": "paleolib:block/suspicious_basalt_top_0",
+    "side": "paleolib:block/suspicious_basalt_side_0"
   }
 }

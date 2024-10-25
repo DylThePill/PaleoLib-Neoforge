@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "paleolib:block/suspicious_deepslate_3"
+    "end": "paleolib:block/suspicious_deepslate_top_3",
+    "side": "paleolib:block/suspicious_deepslate_3"
   }
 }
