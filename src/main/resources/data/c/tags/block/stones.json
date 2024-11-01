@@ -1,0 +1,10 @@
+{
+  "values": [
+    "paleolib:suspicious_andesite",
+    "paleolib:suspicious_diorite",
+    "paleolib:suspicious_granite",
+    "paleolib:suspicious_stone",
+    "paleolib:suspicious_deepslate",
+    "paleolib:suspicious_tuff"
+  ]
+}
